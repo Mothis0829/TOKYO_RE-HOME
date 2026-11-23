@@ -2,9 +2,6 @@
 A furniture exchange platform for international students in Tokyo
 ### Please update your code under your number's branch
 
-# TOKYO RE:HOME
-
-### A Furniture Exchange Platform for International Students in Tokyo
 
 **TOKYO RE:HOME** is a student-to-student furniture exchange platform designed to help international students in Tokyo buy, sell, donate, and reuse second-hand furniture.
 
