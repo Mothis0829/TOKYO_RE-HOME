@@ -1,0 +1,45 @@
+/* Starter styles. Replace colors/spacing with the team's shared design system later. */
+.listing-form, .furniture-card, .image-uploader { box-sizing: border-box; }
+.listing-form *, .furniture-card *, .image-uploader * { box-sizing: border-box; }
+.listing-form { display: flex; flex-direction: column; gap: 10px; max-width: 700px; padding: 24px; background: #fff; border: 1px solid #d9e2e8; border-radius: 14px; color: #20303c; }
+.listing-form h2 { margin: 0 0 14px; }
+.listing-form input:not([type=checkbox]):not([type=file]), .listing-form select, .listing-form textarea { width: 100%; min-width: 0; padding: 10px 12px; border: 1px solid #c7d2dc; border-radius: 8px; font: inherit; background: white; }
+.listing-form input:focus, .listing-form textarea:focus, .listing-form select:focus { outline: 2px solid #8fc5bc; outline-offset: 1px; }
+.listing-label { display: block; margin-top: 8px; font-weight: 600; font-size: 14px; }
+.listing-help { margin: 3px 0 0; font-size: 12px; color: #64748b; }
+.listing-error { color: #ba1b1b; background: #fff1f1; padding: 10px; border-radius: 7px; font-size: 13px; }
+.listing-form__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.listing-form__checkbox { display: flex; gap: 9px; align-items: center; font-size: 14px; margin-top: 10px; }
+.listing-form__bundle { padding: 12px; border: 1px solid #d9e2e8; border-radius: 8px; }
+.listing-form__bundle legend { font-weight: 600; }
+.listing-form__item { display: grid; grid-template-columns: minmax(0, 1fr) 84px auto; gap: 8px; margin: 8px 0; }
+.listing-form button, .furniture-card button, .image-uploader button { cursor: pointer; border-radius: 8px; border: 1px solid #c7d2dc; padding: 9px 12px; background: #fff; color: #273b4d; font: inherit; }
+.listing-form button.primary { color: #fff; background: #12695c; border-color: #12695c; font-weight: 600; }
+.listing-form button:disabled, .image-uploader button:disabled { cursor: not-allowed; opacity: 0.6; }
+.listing-form__actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; }
+.image-uploader__grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.image-uploader__preview { position: relative; width: 110px; height: 110px; }
+.image-uploader__preview img { width: 100%; height: 100%; border-radius: 8px; object-fit: cover; }
+.image-uploader__preview button { position: absolute; right: -7px; top: -7px; background: #fff; padding: 1px 7px; border-radius: 50%; }
+.furniture-card { width: 100%; max-width: 340px; border: 1px solid #d9e2e8; border-radius: 12px; overflow: hidden; background: #fff; color: #20303c; }
+.furniture-card__image-wrap { position: relative; height: 190px; background: #eef3f6; }
+.furniture-card__image { width: 100%; height: 100%; object-fit: cover; }
+.furniture-card__placeholder { display: grid; place-items: center; height: 100%; color: #64748b; }
+.furniture-card__bundle { position: absolute; top: 10px; left: 10px; background: #fff; padding: 4px 8px; border-radius: 6px; font-size: 12px; }
+.furniture-card__content { padding: 14px; }
+.furniture-card__title { margin: 0 0 6px; font-size: 18px; }
+.furniture-card__meta { color: #64748b; font-size: 13px; margin: 0 0 16px; }
+.furniture-card__bottom { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.furniture-card__price { font-size: 18px; }
+.listing-status { font-size: 12px; color: #475569; background: #e2e8f0; padding: 5px 8px; border-radius: 20px; }
+.listing-status--available { color: #126348; background: #e2f6ea; }
+.listing-status--reserved { color: #8c560b; background: #fff1cd; }
+.listing-status--completed { color: #475569; background: #e2e8f0; }
+.furniture-card__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+.furniture-card__actions button { font-size: 12px; padding: 6px 8px; }
+.furniture-card__actions button.danger { color: #b42318; }
+@media (max-width: 540px) {
+  .listing-form { padding: 16px; }
+  .listing-form__row { grid-template-columns: 1fr; }
+  .listing-form__item { grid-template-columns: minmax(0, 1fr) 70px auto; }
+}
