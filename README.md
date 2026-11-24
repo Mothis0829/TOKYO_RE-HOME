@@ -1,7 +1,7 @@
 # TOKYO_RE-HOME
 A furniture exchange platform for international students in Tokyo
 ### Please update your code under your number's branch
-
+### 请将各自负责的代码上传到自己对应编号的branch中，不要上传到main
 
 **TOKYO RE:HOME** is a student-to-student furniture exchange platform designed to help international students in Tokyo buy, sell, donate, and reuse second-hand furniture.
 
@@ -36,7 +36,7 @@ Our goal is to reduce the financial and logistical difficulties of furniture dis
 | 6 | Reservation & Transaction Developer | Develop furniture reservation, availability, and transaction workflows. |
 | 7 | Messaging & System Integration Developer | Implement user messaging and integrate different modules of the platform. |
 
-## 🛠️ Technology Stack & Tools
+## Technology Stack & Tools
 
 The following technologies are planned or under consideration for development.
 
